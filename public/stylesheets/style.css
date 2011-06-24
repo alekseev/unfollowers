@@ -1,0 +1,70 @@
+body, html {
+	font: 14px Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+	margin: 10px;
+}
+ul, li, p, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+	float: left;
+	width: 450px;
+	padding: 10px 0 10px 10px;
+	min-height: 48px;
+	border-bottom: 1px #eee solid;
+}
+li p {
+	margin-left: 60px;
+}
+.r {
+	float: right;
+}
+.l {
+	float: left;
+}
+.c {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	margin-left: -300px;
+	text-align: center;
+}
+.name {
+	font-size: 13px;
+	color: #999;
+}
+.hidden {
+	display: none;
+}
+.js {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+div.container {
+	display: inline-block;
+	width: 900px;
+	margin-top: 20px;
+}
+div.settings {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -200px;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+div.followers, div.unfollowers {
+	float: left;
+	width: 450px;
+}
+ul.followers, ul.unfollowers {
+	text-align: left;
+}
+img.login_button {
+	cursor: pointer;
+}

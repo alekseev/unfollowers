@@ -1,0 +1,6 @@
+en:
+  mail:
+    notification:
+      subject_one:  "unfollowed you"
+      subject_many: "unfollowed you"
+    validation: "Email validation"

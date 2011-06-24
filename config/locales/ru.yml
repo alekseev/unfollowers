@@ -1,0 +1,6 @@
+ru:
+  mail:
+    notification:
+      subject_one:  "удалил(а) Вас из друзей на twitter.com"
+      subject_many: "удалили Вас из друзей на twitter.com"
+    validation: "Подтверждение email'а"

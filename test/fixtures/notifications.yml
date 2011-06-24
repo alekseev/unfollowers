@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 
+  unfollower_id: 
+  send_after: 2011-04-18 09:11:58
+
+two:
+  user_id: 
+  unfollower_id: 
+  send_after: 2011-04-18 09:11:58

@@ -1,0 +1,8 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+Gemfile.lock
+Gemfile
+config/database.yml
+config/authlogic.yml

@@ -1,0 +1,32 @@
+<%= render :partial => "settings", :locals => { :user => @user } %>
+<span class="r">
+	<a href="#" class="js" onclick="return settings()">Настройки</a>
+	<span id="notice_validated" class="<%= "hidden" if current_user.email_validated? %>">(email не активирован)</span>
+	<a href="/logout">Выход</a>
+</span>
+<div style="text-align: center">
+<div class="container">
+	<div class="followers">
+		Фолловеры:<br><br>
+		<ul class="followers">
+			<% if @last_update == "nil" %>
+			<img src="/images/loader.gif" class="loader">
+			<script>
+				checker();
+			</script>
+			<% end %>
+			<% @followers.each do |f| %>
+				<%= render :partial => "follower", :locals => { :f => f } %>
+			<% end %>
+		</ul>
+	</div>
+	<div class="unfollowers">
+		Анфолловеры:<br><br>
+		<ul class="unfollowers">
+			<% @unfollowers.each do |f| %>
+				<%= render :partial => "unfollower", :locals => { :f => f } %>
+			<% end %>
+		</ul>
+	</div>
+</div>
+</div>

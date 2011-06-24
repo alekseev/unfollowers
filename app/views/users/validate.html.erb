@@ -1,0 +1,11 @@
+<script>
+	setTimeout('window.location = "/"', 5000);
+</script>
+<div class="c">
+	<% if @validated == "true" %>
+		Ваш email подтвержден.
+	<% else %>
+		Код не действителен.
+	<% end %>
+	<br>Через несколько секунд вы будете перекинуты на главную страницу...
+</div>

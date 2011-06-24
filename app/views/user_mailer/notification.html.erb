@@ -1,0 +1,9 @@
+<p><%= @user.name %>,</p>
+
+<p><%= @unfollowers.length > 1 ? "Пользователи" : "Пользователь" %>
+<% @unfollowers.each do |u| %>
+	<%= link_to "@#{u.screen_name}", u.link %>, 
+<% end %>
+<%= @unfollowers.length > 1 ? "удалили" : "удалил(а)" %> Вас из своего списка друзей на <a href="http://twitter.com">twitter.com</a>.
+</p>
+<p>С уважением, <a href="http://unfollowers.ru">Unfollowers.ru</a>.</p>

@@ -1,0 +1,18 @@
+<div id="settings" class="settings" style="display: none;">
+	<a href="#" onclick="return settings()" class="r js">закрыть</a>
+	<h2>Настройки</h2>
+	<%= form_for user, :url => :settings, :html => {:id => 'settings_form'} do |f| %>
+		<%= f.label :mail_period, "Присылать уведомления не чаще 1 раза в" %>
+		<%= f.select(:mail_period, [['час', 'hour'], ['сутки', 'day'], ['неделю', 'week']]) %>
+		<%= f.label :email, "Адрес электронной почты:" %>
+		<%= f.text_field :email %>
+		<%= f.submit "Сохранить" %>
+	<% end %>
+	<p class="notice"></p>
+</div>
+<script>
+$("#settings").submit(function(){
+	save_settings();
+	return false;
+});
+</script>

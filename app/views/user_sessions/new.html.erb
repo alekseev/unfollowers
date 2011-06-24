@@ -1,0 +1,7 @@
+<div class="c" style="margin-top: -12px;">
+	<% form_tag(authenticate_path, :id => "login") do %>
+		<%= hidden_field_tag 'authentication_type', "session" %>
+		<%= hidden_field_tag 'oauth_provider', "twitter" %>
+		<%= image_tag "/images/sign-in-with-twitter-l.png", :class => 'login_button', :onclick => '$("#login").submit()' %>
+	<% end %>
+</div>
